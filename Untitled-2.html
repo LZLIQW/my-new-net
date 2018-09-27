@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>注册</title>
+<style type="text/css">
+	body{
+		font-family: "Hoefler Text", "Liberation Serif","Times New Roman", "serif";
+		font-size: 18px;
+		text-align: center;
+		font-weight: bold;
+		background: linear-gradient(blue,white,red);
+	}
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	h3{
+		font-size: 18px;
+		font-weight: bold;
+	}
+	p{
+		color: red;
+		margin: 4px;
+	}
+	input{
+		padding: 1px;
+		margin: 3px;
+		font-size: 16px;
+		border-radius: 6px;
+	}
+	.buttom{
+		border: 5px outset #00F;
+		border-radius: 15px;
+		width: 100px;
+		height: 30px;
+		font: bold 8px italic;
+		color: #00f;
+		box-shadow: 10px 10px 10px #06c;
+	}
+	#formwrapper{
+		width: 450px;
+		margin: 15px auto;
+		padding: 20px;
+		text-align: center;
+		border: 1px solid #0A0000;
+		border-radius: 14px;
+		position: absolute;
+		top: 200px;
+		left: 700px;
+	}
+	fieldset{
+		padding: 10px;
+		margin-top: 5px;
+		border: 1px solid  #0E0304;
+		border-radius: 10px;
+		text-align: left;
+	}
+	fieldset legend{
+		color: #1e7ace;
+		font-weight: bold;
+		padding: 3px 20px 3px 20px;
+		border: 1px solid #a4cdf2;;
+		background: #fff;
+	}
+	fieldset label{
+		float: left;
+		width: 120px;
+		text-align: right;
+		padding: 4px;
+		margin: 1px;
+	}
+	fieldset div{
+		clear: left;
+		margin-bottom: 4px;
+		}
+	.input{
+		width: 180px;
+	}
+	.enter{
+		text-align: center;
+	}
+	#faw{
+		width: 1980px;
+		height: 1030px;
+	}
+</style>
+</head>
+<body>
+<div id="faw">
+	<div id="formwrapper">
+	<form method="post" name="apFrom" id="apForm">
+	<fieldset>
+		<legend>用户注册</legend>
+		<p><strong>*的地方必须填写</strong></p>
+		<div>
+			<label for="Name">用户名</label>
+			<input type="text" name="Name" class="input" id="Name" size="20" maxlength="30" placeholder="字母和数字组成">*<br/>(最少六个字符)<br/>
+		</div>
+		<div>
+			<label for="confirm_password">重复密码</label>
+			<input type="password" name="confirm_password" class="input" id="confirm_password" size="18" maxlength="15"/>*<br>
+		</div>
+		<div>
+		<label for="sex">性别</label>
+		<input type="radio" name="sex" class="sex"/>男
+		<input type="radio" name="sex" class="sex"/>女<br/>
+		</div>
+		<div>
+		<label for="Email">电子邮箱</label>
+		<input type="text" name="Email" class="input" id="Email" size="20" maxlength="150"/>*<br/>
+		</div>
+		<div>
+		<label for="age">年龄</label>
+		<input type="number" name="number" class="input" size="4" maxlength="3" value="18"/><br/>
+		</div>
+		<div class="enter">
+			<input name="submit" type="submit" class="buttom" value="提交"/>
+			<input name="reset" type="reset" class="buttom" value="重置"/>
+		</div>
+	</fieldset>	
+	</form>
+	</div>
+</div>
+</body>
+</html>
